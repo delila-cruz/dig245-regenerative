@@ -1,2 +1,129 @@
+import { faker } from "https://esm.sh/@faker-js/faker";
+let wordsEle = document.querySelector(".words");
 
-/* javascript */
+let verbs = "";
+let nouns = "";
+const pros = ["me", "us", "them", "him", "her", "it"];
+let advs = "";
+let adjs = "";
+const conjs = ["and", "but", "or"];
+let preps = "";
+const arts = ["a", "an", "the"];
+const puncs = [".", "!", "?"];
+
+function getNoun() {
+  let str = "";
+  let lMargin = 4 * Math.random() + 2;
+  let noun = faker.word.noun();
+  str += `<span style="margin-left:${lMargin}rem">${noun}</span>`;
+  console.log(noun);
+  return str;
+}
+
+function getVerb() {
+  let str = "";
+  let lMargin = 4 * Math.random() + 2;
+  let verb = faker.word.verb();
+  str += `<span style="margin-left:${lMargin}rem">${verb}</span>`;
+  console.log(verb);
+  return str;
+}
+
+function getPro() {
+  let str = "";
+  for (let i = 0; i < 1; i++) {
+    let lMargin = 4 * Math.random() + 2;
+    let pro = pros[Math.floor(Math.random() * pros.length)];
+  str += `<span style="margin-left:${lMargin}rem">${pro}</span>`;
+  console.log(pro);
+  }
+  return str;
+}
+
+function getAdv() {
+  let str = "";
+  let lMargin = 4 * Math.random() + 2;
+  let adv = faker.word.adverb();
+  str += `<span style="margin-left:${lMargin}rem">${adv}</span>`;
+  console.log(adv);
+  return str;
+}
+
+function getAdj() {
+  let str = "";
+  let lMargin = 4 * Math.random() + 2;
+  let adj = faker.word.adjective();
+  str += `<span style="margin-left:${lMargin}rem">${adj}</span>`;
+  console.log(adj);
+  return str;
+}
+
+function getConj() {
+  let str = "";
+  for (let i = 0; i < 1; i++) {
+    let lMargin = 4 * Math.random() + 2;
+    let conj = conjs[Math.floor(Math.random() * conjs.length)];
+  str += `<span style="margin-left:${lMargin}rem">${conj}</span>`;
+  console.log(conj);
+  }
+  return str;
+}
+
+function getPrep() {
+  let str = "";
+  let lMargin = 4 * Math.random() + 2;
+  let prep = faker.word.preposition();
+  str += `<span style="margin-left:${lMargin}rem">${prep}</span>`;
+  console.log(prep);
+  return str;
+}
+
+function getArt() {
+  let str = "";
+  for (let i = 0; i < 1; i++) {
+    let lMargin = 4 * Math.random() + 2;
+    let art = arts[Math.floor(Math.random() * arts.length)];
+  str += `<span style="margin-left:${lMargin}rem">${art}</span>`;
+  console.log(art);
+  }
+  return str;
+}
+
+function getPunc() {
+  let str = "";
+  for (let i = 0; i < 1; i++) {
+    let lMargin = 4 * Math.random() + 2;
+    let punc = puncs[Math.floor(Math.random() * puncs.length)];
+  str += `<span style="margin-left:${lMargin}rem">${punc}</span>`;
+  console.log(punc);
+  }
+  return str;
+}
+
+function generate() {
+  let str = "";
+  str += getVerb();
+  str += getPro();
+  str += `<br>`
+  str += getAdv();
+  str += getAdj();
+  str += getConj();
+  str += getAdj();
+  str += `<br>`;
+  str += getVerb();
+  str += getPrep();
+  str += getPro();
+  str += `<br>`;
+  str += getVerb();
+  str += getArt();
+  str += getNoun();
+  str += getPunc();
+  wordsEle.innerHTML = str;
+}
+
+//listeners - event listeners for page loading/clicks
+window.addEventListener("load", generate);
+document.addEventListener("click", generate);
+
+// look at ch 6 to rotate
+
