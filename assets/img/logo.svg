@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 425.89 177.81">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        font-size: 48.43px;
+      }
+
+      .cls-3, .cls-4 {
+        font-family: OswaldHeavy-Regular, 'Oswald Heavy';
+      }
+
+      .cls-4 {
+        font-size: 48.05px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.04em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <g>
+        <rect class="cls-1" x="148.27" y="78.42" width="272.05" height="71.06" transform="translate(-17.33 60.74) rotate(-11.84)"/>
+        <rect class="cls-2" x="146.38" y="69.42" width="272.05" height="71.06" transform="translate(-15.52 60.17) rotate(-11.84)"/>
+      </g>
+      <text class="cls-4" transform="translate(191.31 146.4) rotate(-11.84) scale(1.21 1)"><tspan x="0" y="0">M</tspan><tspan class="cls-6" x="34.45" y="0">A</tspan><tspan x="59.58" y="0">YHEM</tspan></text>
+    </g>
+    <g>
+      <g>
+        <rect class="cls-1" x="7.51" y="37.66" width="274.62" height="71.63" transform="translate(-11.99 31.27) rotate(-11.84)"/>
+        <rect class="cls-2" x="5.61" y="28.59" width="274.62" height="71.63" transform="translate(-10.17 30.69) rotate(-11.84)"/>
+      </g>
+      <text class="cls-3" transform="translate(50.96 106.21) rotate(-11.84) scale(1.22 1)"><tspan x="0" y="0">M</tspan><tspan class="cls-5" x="34.73" y="0">A</tspan><tspan x="61.51" y="0">GNET</tspan></text>
+    </g>
+  </g>
+</svg>
