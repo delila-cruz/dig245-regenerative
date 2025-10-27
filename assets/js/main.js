@@ -1,4 +1,9 @@
-import { faker } from "https://esm.sh/@faker-js/faker";
+/* CONSOLE KEPT THROWING ERRORS BECAUSE OF THE IMPORT FAKER.JS LINE, SO I JUST ADDED
+ALL OF THIS AS A SCRIPT TO HTML AND IT WORKED
+
+import { faker } from 'https://esm.sh/@faker-js/faker';
+
+
 let wordsEle = document.querySelector(".words");
 
 let verbs = "";
@@ -125,5 +130,5 @@ function generate() {
 window.addEventListener("load", generate);
 document.addEventListener("click", generate);
 
-// look at ch 6 to rotate
 
+// look at ch 6 to rotate
