@@ -1,6 +1,17 @@
 * {
     text-align: center;
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #8E7C93;
 }
+
+h2 {
+  margin: 1rem auto 1.5rem;
+  color: black;
+}
+
 
 .words span {
   display: inline-block;
@@ -11,12 +22,26 @@
   margin-top: 1rem;
   font-weight: normal;
   font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif; 
+  font-weight: 400;
+
 }
 
 
 .words {
     display: inline-block;
-    border: solid 2px black;
+    border: solid 2px #201E1F;
     padding: 2rem 1rem 4rem;
+    background: #BEB6BF;
 
+}
+
+.stuff {
+  display: block;
+  margin: auto;
+}
+
+.logo {
+  margin: 1rem auto;
+  display: block;
 }

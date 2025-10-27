@@ -5,15 +5,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Magnet Mayhem</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
     <!-- visible content goes here -->
-	<div class="container">
-    <h2>Click anywhere to generate a new magnet poem.</h2>
-    <br>
-        <div class="words">
+	<div class="container-fluid">
+        <div class="stuff">
+            <div class="row">
+                <img class="logo col-sm-4 col-md-6 col-lg-3 img-fluid medium-image" src="assets/img/logo.svg">
+                <h2>Click anywhere to generate a unique (nonsensical) magnet poem!</h2>
+                <br>
+                <div class="words">
+                    </div>
+            </div>
         </div>
     </div>
 
@@ -142,12 +151,38 @@
     wordsEle.innerHTML = str;
     }
 
+
+
+    //adjust tilt
+function randomNumber(min, max){
+    return Math.floor(Math.random() * (max - min) + 1) + min;
+}
+
+let rotation = 0;
+    document.addEventListener("click", function () {
+    let min = -10;
+    let max = 10;
+    rotation += Math.floor(Math.random() * (max - min + 1)) +
+    min;
+    document.body.style.transform = `rotate(${rotation}deg)`;
+});
+
+
+let divs = document.querySelectorAll(".words");
+function randomize(){
+    divs.forEach(function(div){
+    let rotate = randomNumber(-8, 8);
+    div.style.transform =
+    `rotate(${rotate}deg)`;
+})
+}
+randomize();
+
     //listeners - event listeners for page loading/clicks
     window.addEventListener("load", generate);
     document.addEventListener("click", generate);
-
-    // look at ch 6 to rotate
-
+    window.addEventListener("load", randomize); 
+    document.addEventListener("click", randomize); 
 
     </script>
     </body>
