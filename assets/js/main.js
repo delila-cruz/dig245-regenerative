@@ -130,5 +130,6 @@ function generate() {
 window.addEventListener("load", generate);
 document.addEventListener("click", generate);
 
+/* 
 
 // look at ch 6 to rotate
